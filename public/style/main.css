@@ -169,7 +169,6 @@ body {
   background-color: #2A3D66;
   color: #fff;
   /*#222*/
-  text-align: center;
   font-family: 'Mulish', sans-serif;
   width: 100%;
 }
@@ -258,39 +257,142 @@ header {
   display: flex;
   height: 100%;
   width: 100%;
-  background: deepskyblue;
 }
 
-.halfdiv {
+@media (max-width: 1600px) {
+  .profile {
+    display: block;
+  }
+}
+
+@media (max-width: 1600px) {
+  .profile .halfdiv:nth-child(1) {
+    border-bottom: none;
+  }
+}
+
+.profile .halfdiv {
+  background: deepskyblue;
   width: 50%;
   border: 2px solid black;
 }
 
-.picture {
+@media (max-width: 1600px) {
+  .profile .halfdiv {
+    width: 100%;
+  }
+}
+
+.profile .halfdiv .blocInfo {
+  margin-top: 40px;
+  margin-left: 10%;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0px;
+  }
+}
+
+.profile .halfdiv .blocInfo .text {
+  z-index: 1;
+  position: relative;
+  top: -150;
+  left: 200;
+  width: 500px;
+  border: 2px solid red;
+  background-color: royalblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40%;
-  height: 30%;
-}
-
-.pictureProfile {
-  width: 100%;
-  height: 100%;
-}
-
-.blocInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo .text {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .profile .halfdiv .blocInfo .text {
+    width: 300px;
+  }
+}
+
+.profile .halfdiv .blocInfo .text .underPicture {
+  width: 100%;
+  height: 160px;
+  padding-left: 160px;
+}
+
+.profile .halfdiv .blocInfo .text .underPicture p, .profile .halfdiv .blocInfo .text .underPicture h1 {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo .text .underPicture {
+    padding-left: 0px;
+    height: 100px;
+  }
+}
+
+.profile .halfdiv .blocInfo .text .notUnderPicture {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.profile .halfdiv .blocInfo .text .notUnderPicture .listMargin {
+  margin-left: 40px;
+}
+
+.profile .halfdiv .blocInfo .picture {
+  position: relative;
+  margin-right: 250px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo .picture {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.profile .halfdiv .blocInfo .picture .pictureProfile {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
 }
 
 /* ANIMATION CADRE */
@@ -630,13 +732,6 @@ header {
   display: flex;
 }
 
-.general {
-  width: 50%;
-  float: left;
-  margin-top: 70px;
-  margin-left: 70px;
-}
-
 .robot {
   width: 60%;
 }
@@ -656,11 +751,18 @@ header {
   height: 90%;
 }
 
-p {
+.generalError {
+  width: 50%;
+  float: left;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.generalError p {
   margin-right: 50%;
 }
 
-h4 {
+.generalError h4 {
   margin-right: 30%;
 }
 /*# sourceMappingURL=main.css.map */

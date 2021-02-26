@@ -1,12 +1,7 @@
 .flex{
     display: flex;
 }
-.general{
-    width: 50%;
-    float: left;
-    margin-top: 70px;
-    margin-left: 70px;
-}
+
 .robot{
     width: 60%
 }
@@ -24,10 +19,16 @@
     width: 2%;
     height: 90%;
 }
+.generalError{
+    width: 50%;
+    float: left;
+    margin-top: 70px;
+    margin-left: 70px;
+    p{
+        margin-right: 50%;
+    }
+    h4{
+        margin-right: 30%;
+    }
+}
 
-p{
-    margin-right: 50%;
-}
-h4{
-    margin-right: 30%;
-}
