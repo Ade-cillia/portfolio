@@ -360,7 +360,7 @@ header {
 }
 
 .profile .halfdiv .blocInfo .text .notUnderPicture {
-  height: 100px;
+  padding-bottom: 15px;
   margin-left: 10px;
 }
 
