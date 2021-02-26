@@ -17,7 +17,7 @@
                     <p>Soft-Skills :</p>
                     <ul class="listMargin">
                         <li>
-                            Passioné
+                            Passionné
                         </li>
                         <li>
                             Dynamique
@@ -41,8 +41,7 @@
             <div class="text">
                 <div class="underPicture">
                     <p>Je joue de la guitare électrique depuis 9 ans dans une école de musique.<br>
-                    Nous avons des groupes avec les quels nous organisons des concert dans des 
-                    restaurant comme le Ninkasi et autres.<br> 
+                    Nous avons des groupes et nous organisons des concerts dans des restaurants comme le Ninkasi et autres.<br> 
                     </p><br>
                     <p>
                         Je joue aussi du piano de la batterie, de la mendoline et autre encore...
@@ -53,7 +52,7 @@
                     <p>Soft-Skills obtenu:</p>
                     <ul class="listMargin">
                         <li>
-                            Leader-Sheep
+                            Leadership
                         </li>
                         <li>
                             Autodiscipline
@@ -63,6 +62,35 @@
                 
             </div>
         </div>
+
+        <div class="blocInfo">
+            <div class="picture">
+                <img class="pictureProfile" src="./public/image/profile/Japan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="underPicture">
+                    <p>Je suis passionné de culture japonaise et j'envisage d'aller habiter au Japon dans une dizaine d'années.<br> 
+                    </p><br>
+                    <p>
+                        Pour ce faire, j'apprends le japonais en autodidacte.
+                    </p>
+                    
+                </div>
+                <div class="notUnderPicture">
+                    <p>Soft-Skills obtenu:</p>
+                    <ul class="listMargin">
+                        <li>
+                            Autonomie
+                        </li>
+                        <li>
+                            Persévérance
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
     </div>
     <div class="halfdiv">
 

@@ -16,9 +16,40 @@
         @media (max-width:1600px) {
             width: 100%;
         }
+        .blocInfo:nth-child(odd){
+            margin-left: 10%;
+            @media (max-width:800px){
+                margin-left: 0%;
+            }
+            .underPicture{
+                padding-left: 160px;
+            }
+        }
+        
+        .blocInfo:nth-child(even){
+            margin-left: -10%;
+            @media (max-width:800px){
+                margin-left: 0%;
+            }
+            .picture{
+                position: relative;
+                left: 500px;
+                @media (max-width:800px){
+                    left: 0px;
+                }
+            }
+            .text{
+                
+            }
+            .underPicture{
+                padding-right: 200px;
+                @media (max-width:800px){
+                    padding-right: 0px;
+                }
+            }
+        }
         .blocInfo{
             margin-top: 40px;
-            margin-left: 10%;
             @media (max-width:800px) {
                 display: flex;
                 justify-content: center;
@@ -52,7 +83,6 @@
                 .underPicture{
                     width: 100%;
                     min-height: 160px;
-                    padding-left: 160px;
                     p, h1{
                         width: 100%;
                     }

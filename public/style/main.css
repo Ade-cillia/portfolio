@@ -282,9 +282,53 @@ header {
   }
 }
 
+.profile .halfdiv .blocInfo:nth-child(odd) {
+  margin-left: 10%;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo:nth-child(odd) {
+    margin-left: 0%;
+  }
+}
+
+.profile .halfdiv .blocInfo:nth-child(odd) .underPicture {
+  padding-left: 160px;
+}
+
+.profile .halfdiv .blocInfo:nth-child(even) {
+  margin-left: -10%;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo:nth-child(even) {
+    margin-left: 0%;
+  }
+}
+
+.profile .halfdiv .blocInfo:nth-child(even) .picture {
+  position: relative;
+  left: 500px;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo:nth-child(even) .picture {
+    left: 0px;
+  }
+}
+
+.profile .halfdiv .blocInfo:nth-child(even) .underPicture {
+  padding-right: 200px;
+}
+
+@media (max-width: 800px) {
+  .profile .halfdiv .blocInfo:nth-child(even) .underPicture {
+    padding-right: 0px;
+  }
+}
+
 .profile .halfdiv .blocInfo {
   margin-top: 40px;
-  margin-left: 10%;
 }
 
 @media (max-width: 800px) {
@@ -345,7 +389,6 @@ header {
 .profile .halfdiv .blocInfo .text .underPicture {
   width: 100%;
   min-height: 160px;
-  padding-left: 160px;
 }
 
 .profile .halfdiv .blocInfo .text .underPicture p, .profile .halfdiv .blocInfo .text .underPicture h1 {
